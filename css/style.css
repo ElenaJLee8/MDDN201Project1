@@ -62,6 +62,11 @@ nav a:hover{
 	margin-top: 2em;
 }
 
+#main{
+	background-color: #000000;
+	margin-bottom: 50px;
+	text-align: center;
+}
 
 #mh2  {margin-left: 1em;
 }
@@ -97,6 +102,9 @@ margin-left: 1em;
 
 #antenna4{
 	margin-left: 1em;
+}
+
+
 }
 /* Simple grid */
 .g-row{
