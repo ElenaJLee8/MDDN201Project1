@@ -1,0 +1,179 @@
+*{
+	box-sizing: border-box;
+	/* This makes the widths of elements more consistent
+		Full details here https://css-tricks.com/box-sizing/ */
+}
+
+body{
+	margin: 0px; /* Often browsers have a 5px margin by deafult*/
+	/*font-family: sans-serif;*/
+	font-family: 'Poppins', sans-serif;
+	background-color: #E6F7F6;
+}
+
+section{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+header{
+	background-color: #488286;
+	color: white; /* more readable on an orange background */
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display:inline-block;
+}
+
+
+#top{
+	text-align: center;
+
+}
+#main{
+	background-color: #000000;
+	text-align: center;
+}
+
+
+/* NAVIGATION BAR */
+
+nav{
+	width: 100%;
+	height: 50px;
+	background-color: #b7d5d4;
+	text-align:center;
+	margin-top:-20px;
+	position: fixed;
+
+}
+
+nav a, nav h3{
+	float: left;
+	line-height: 50px;
+	margin: 0;
+	margin-left: 1em;
+	margin-right: 1em;
+	text-decoration: none;
+
+}
+
+nav a:hover{
+	text-decoration: underline; /* Hover styles to let people know they can click it */
+}
+
+#maintitle{
+	margin-top: 2em;
+	
+}
+#mh1{ 
+	height:400px;
+	width:400px;
+	margin-left: 6em;
+
+}
+
+#mh2  {
+	margin-left: 1em;
+
+}
+
+#mh4 {
+	margin-left: 1em;
+}
+
+#mh6 {
+	margin-left: 1em;
+}
+
+
+#cctv1{
+height:400px;
+	width:400px;
+
+
+}
+
+#cctv2{
+margin-left: 1em;
+}
+
+#cctv4{
+	margin-left: 1em;
+}
+
+#cctv9{
+	margin-left: 1em;
+}
+
+
+#markings1{
+height:400px;
+	width:400px;
+	margin-left: 6em;
+
+}
+
+#markings2{
+	margin-left: 1em;
+}
+
+
+
+
+
+#antenna1{
+height:400px;
+	width:400px;
+
+
+
+}
+
+#antenna2{
+	margin-left: 1em;
+}
+
+#antenna4{
+	margin-left: 1em;
+}
+/* Simple grid */
+.g-row{
+	width: 100%;
+	overflow: hidden;
+}
+
+.g-row img{
+	width: 100%; /*This makes all images in grids to be the size of their cell */
+}
+
+.g-50{
+	width: 50%;
+	float: left;
+}
+
+.g-30{
+	width: 30%;
+	float: left;
+}
+
+.g-70{
+	width: 70%;
+	float: left;
+}
+
+.g-40{
+	width: 40%
+	float: left;
+}
+
+.show{
+	border: 1px solid blue;
+	padding: 2px;
+}
+
+.padded{
+	padding: 20px; /* I add this to cells to add a little padding*/
+}
