@@ -74,14 +74,10 @@ nav a:hover{
 	height:400px;
 	width:400px;
 	margin-left: 6em;
+	padding: 5em;
 
 }
 
-
-
-#mh1:hover .image{
-	opacity: 0.5
-}
 
 
 
