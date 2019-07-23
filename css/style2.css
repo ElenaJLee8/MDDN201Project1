@@ -11,6 +11,8 @@ body{
 	background-color: #E6F7F6;
 }
 
+
+
 section{
 	max-width: 1000px;
 	margin-left: auto;
@@ -66,14 +68,22 @@ nav a:hover{
 
 #maintitle{
 	margin-top: 2em;
-	
+
 }
-#mh1{ 
+#mh1{
 	height:400px;
 	width:400px;
 	margin-left: 6em;
 
 }
+
+
+
+#mh1:hover .image{
+	opacity: 0.5
+}
+
+
 
 #mh2  {
 	margin-left: 1em;
