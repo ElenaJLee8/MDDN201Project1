@@ -21,16 +21,11 @@ section{
 
 header{
 	background-color: #488286;
-	color: white; /* more readable on an orange background */
+	color: white;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
-#main{
-	background-color: #000000;
-	margin-bottom: 50px;
-	text-align: center;
-}
 
 /* NAVIGATION BAR */
 
@@ -58,16 +53,19 @@ nav a:hover{
 	text-decoration: underline; /* Hover styles to let people know they can click it */
 }
 
+/*Title - actual heading */
 #maintitle{
-	margin-top: 2em;
+margin-top: 1em;
 }
+
+/* Internet Infrastructure Heading and descript */
 
 #main{
 	background-color: #000000;
 	margin-bottom: 50px;
 	text-align: center;
 }
-
+/*IMAGE IDS */
 #mh2  {margin-left: 1em;
 }
 
@@ -119,6 +117,9 @@ margin-left: 1em;
 .g-50{
 	width: 50%;
 	float: left;
+}
+
+
 }
 
 .g-30{

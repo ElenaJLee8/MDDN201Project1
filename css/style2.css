@@ -1,3 +1,5 @@
+/*INDEX.HTML STYLESHEET*/
+
 *{
 	box-sizing: border-box;
 	/* This makes the widths of elements more consistent
@@ -34,9 +36,13 @@ header{
 	text-align: center;
 
 }
+
+/*Heading and descript */
 #main{
 	background-color: #000000;
 	text-align: center;
+	max-height: 200px;
+	width: 950px;
 }
 
 
@@ -66,20 +72,15 @@ nav a:hover{
 	text-decoration: underline; /* Hover styles to let people know they can click it */
 }
 
+/*Actual heading */
 #maintitle{
-	margin-top: 2em;
-
+margin-top: -1em;
 }
+
+/*IMAGE IDS */
 #mh1{
-	height:400px;
-	width:400px;
-	margin-left: 6em;
-	padding: 5em;
-
+	max-height: 250px;
 }
-
-
-
 
 #mh2  {
 	margin-left: 1em;
@@ -96,8 +97,7 @@ nav a:hover{
 
 
 #cctv1{
-height:400px;
-	width:400px;
+	max-height: 250px;
 
 
 }
@@ -116,23 +116,18 @@ margin-left: 1em;
 
 
 #markings1{
-height:400px;
-	width:400px;
-	margin-left: 6em;
+	max-height: 250px;
+
 
 }
 
 #markings2{
-	margin-left: 1em;
 }
 
 
 
-
-
 #antenna1{
-height:400px;
-	width:400px;
+	max-height: 250px;
 
 
 
@@ -145,16 +140,30 @@ height:400px;
 #antenna4{
 	margin-left: 1em;
 }
-/* Simple grid */
-.g-row{
+/*COLUMNS*/
+@media screen and (max-width: 600px){
+.column{
 	width: 100%;
 	overflow: hidden;
 }
+}
 
-.g-row img{
+.column{
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.column img{
 	width: 100%; /*This makes all images in grids to be the size of their cell */
 }
 
+
+
+.g-25{
+	width:25%;
+	float:left;
+}
 .g-50{
 	width: 50%;
 	float: left;
@@ -170,11 +179,6 @@ height:400px;
 	float: left;
 }
 
-.g-40{
-	width: 40%
-	float: left;
-}
-
 .show{
 	border: 1px solid blue;
 	padding: 2px;
@@ -182,4 +186,44 @@ height:400px;
 
 .padded{
 	padding: 20px; /* I add this to cells to add a little padding*/
+}
+
+/*Text on Hover specs*/
+.imgdescrip {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(72, 148, 142, 0.72);
+  color: #fff;
+	max-height: 70px;
+  visibility: hidden;
+  opacity: 0;
+	text-align: center;
+
+  transition: opacity .2s, visibility .2s;
+}
+
+/*Text on Hover*/
+
+.column:hover .imgdescrip {
+  visibility: visible;
+  opacity: 1;
+}
+.column:hover .imge {
+	opacity:0.5;
+}
+
+
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
